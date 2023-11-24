@@ -62,3 +62,35 @@ void countAlphabet(char *filename) {
     munmap(data, sbuf.st_size);
     close(fd);
 }
+/*
+*Ejemplo:
+*Consola -> gcc -o G8EP4 Guia08-EjerPro04.c
+*Consola -> G8EP4 Guia08-Ejer01.c 
+*Resultado: Frecuencia de caracteres del alfabeto ingles:
+            a: 92
+            b: 15
+            c: 71
+            d: 72
+            e: 124
+            f: 38
+            g: 23
+            h: 29
+            i: 97
+            j: 0
+            k: 0
+            l: 56
+            m: 22
+            n: 67
+            o: 104
+            p: 36
+            q: 2
+            r: 117
+            s: 81
+            t: 86
+            u: 30
+            v: 22
+            w: 3
+            x: 7
+            y: 12
+            z: 7
+*/
