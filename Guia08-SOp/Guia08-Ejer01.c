@@ -30,14 +30,14 @@ int main(int argc,char **argv)
     if(argc != 3 )
     {
         fprintf(stderr, "Uso: %s orig dest \n", argv[0]); 
-        return(1);
+        exit(1);
     }
 
     /* Abre el archivo origen para lectura */ 
     if( (fdo = open(argv[1], O_RDONLY))<0 )
     {
         perror("No puede abrise el archivo origen"); 
-        return(1);
+        exit(1);
     }
      
     /* Crea el archivo destino */
@@ -45,7 +45,7 @@ int main(int argc,char **argv)
     {
         perror("No puede crearse el archivo destino"); 
         close(fdo);
-        return(1);
+        exit(1);
     }
     
     /* Determinar la longitud del archivo origen */ 
@@ -53,7 +53,7 @@ int main(int argc,char **argv)
     {
         perror("Error en fstat del archivo origen"); 
         close(fdo); 
-        return(1);
+        exit(1);
     }
     
     /* Establecer que la longitud del archivo destino es igual a la del origen */
@@ -62,7 +62,7 @@ int main(int argc,char **argv)
         perror("Error en ftruncate del archivo destino"); 
         close(fdo);
         close(fdd); 
-        return(1);
+        exit(1);
     }
     
     /*Se proyecta el archivo origen*/
@@ -71,7 +71,7 @@ int main(int argc,char **argv)
         perror("Error en la proyeccion del archivo origen"); 
         close(fdo);
         close(fdd); 
-        return(1);
+        exit(1);
     }
     
     /*Se proyecta el archivo destino*/
@@ -80,7 +80,7 @@ int main(int argc,char **argv)
         perror("Error en la proyeccion del archivo destino"); 
         close(fdo);
         close(fdd);
-        return(1);
+        exit(1);
     }
     
     memcpy(dst, org, bstat.st_size);
