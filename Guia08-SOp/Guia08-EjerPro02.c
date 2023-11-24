@@ -54,3 +54,9 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+/*
+*Ejemplo:
+*Consola -> gcc -o G8EP2 Guia08-EjerPro02.c
+*Consola -> G8EP2 Guia08-Ejer01.c 0
+*Resultado: El byte en la posición 0 es /
+*/
