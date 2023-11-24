@@ -77,3 +77,9 @@ void compareFiles(char *file1, char *file2) {
     close(fd1);
     close(fd2);
 }
+/*
+*Ejemplo:
+*Consola -> gcc -o G8EP1 Guia08-EjerPro01.c
+*Consola -> G8E1 Guia08-Ejer01.c Guia08-Ejer02.c
+*Resultado: Los archivos son de diferentes tamaños
+*/
