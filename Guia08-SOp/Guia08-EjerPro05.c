@@ -62,5 +62,6 @@ void interleaveFiles(char *file1, char *file2, char *outputFile) {
 *Ejemplo:
 *Consola -> gcc -o G8EP5 Guia08-EjerPro05.c 
 *Consola -> G8EP5 Guia08-Ejer01.c Guia08-Ejer02.c SALIDA.c
+*Resultado: Archivos intercalados con éxito en SALIDA.C.
 *Revisar en Documentos que creo el Archivo "SALIDA.c" con el contenido de "Guia08-Ejer01.c" y "Guia08-Ejer02.c".  
 */
