@@ -95,3 +95,9 @@ int main(int argc,char **argv)
     
     return 0;
 }
+/*
+*Ejemplo:
+*Consola -> gcc -o G8E1 Guia08-Ejer01.c 
+*Consola -> G8E1 Guia08-Ejer01.c G8E1.c 
+*Revisar en Documentos que creo el Archivo "G8E1.c" con el contenido de "Guia08-Ejer01.c".  
+*/
