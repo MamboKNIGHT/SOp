@@ -69,3 +69,10 @@ int main(int argc, char *argv[])
     //Salir 
     return 0;
 }
+/*
+*Ejemplo:
+*Consola -> gcc -o G8E2 Guia08-Ejer02.c 
+*Consola -> G8E1 0
+*Resultado: ESTE PROGRAMA MUESTRA EL ENESIMO CARACTER DE UNA ARCHIVO PROYECTADO EN MEMORIA
+*           El byte en la posicion 0 es /
+*/
