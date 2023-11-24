@@ -62,7 +62,7 @@ int countCharacter(char *filename, char target) {
 }
 /*
 *Ejemplo:
-*Consola -> gcc -o G8EP3 Guia08-EjerPro01.c
+*Consola -> gcc -o G8EP3 Guia08-EjerPro03.c
 *Consola -> G8EP3 Guia08-Ejer01.c /
 *Resultado: El caracter '/' aparece 27 veces en el archivo.
 */
